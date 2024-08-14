@@ -1,36 +1,39 @@
-const desktopContent = document.querySelector('.desktop-content');
-const mobileContent = document.querySelector('.mobile-content');
+// This is a copy of the script functions in index.html
 
-function toggleContent() {
-    if (window.matchMedia("(max-width: 767px)").matches) {
-        desktopContent.style.display = 'none';
-        mobileContent.style.display = 'block';
-    } else {
-        desktopContent.style.display = 'block';
-        mobileContent.style.display = 'none';
-    }
-}
 
-toggleContent(); // Call the function when the page loads
+// const desktopContent = document.querySelector('.desktop-content');
+// const mobileContent = document.querySelector('.mobile-content');
 
-// Call the function whenever the window size changes
-window.addEventListener('resize', toggleContent);
+// function toggleContent() {
+//     if (window.matchMedia("(max-width: 767px)").matches) {
+//         desktopContent.style.display = 'none';
+//         mobileContent.style.display = 'block';
+//     } else {
+//         desktopContent.style.display = 'block';
+//         mobileContent.style.display = 'none';
+//     }
+// }
 
-function toggleCSS() {
-    const cssLink = document.getElementById('cssLink');
+// toggleContent(); // Call the function when the page loads
+
+// // Call the function whenever the window size changes
+// window.addEventListener('resize', toggleContent);
+
+// function toggleCSS() {
+//     const cssLink = document.getElementById('cssLink');
     
-    if (window.matchMedia("(max-width: 767px)").matches) {
-        cssLink.href = 'style-mobile.css';
-    } else {
-        cssLink.href = 'style-desktop.css';
-    }
-}
+//     if (window.matchMedia("(max-width: 767px)").matches) {
+//         cssLink.href = 'style-mobile.css';
+//     } else {
+//         cssLink.href = 'style-desktop.css';
+//     }
+// }
 
-toggleCSS(); // Call the function when the page loads
+// toggleCSS(); // Call the function when the page loads
 
 
-// Call the function whenever the window size changes
-window.addEventListener('resize', toggleCSS);
+// // Call the function whenever the window size changes
+// window.addEventListener('resize', toggleCSS);
 
 
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
