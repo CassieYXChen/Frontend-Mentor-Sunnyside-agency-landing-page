@@ -549,29 +549,31 @@
          
       /* Style the navigation menu */
       .topnav {
-          overflow: hidden;
-          background-color: transparent;
-          position: absolute;
-          top: 15px;
-          right: 15px;
-          color: white;
-          padding: 20px 20px;
-          font-size: 16px;
-          display: block;
-        }
-        
-        /* Hide the links inside the navigation menu (except for logo/home) */
-        .topnav #myLinks {
-          display: none;
-          background-color: rgb(255, 253, 248);
-          
-          width: 150px;
-          height: 150px;
-          z-index: 9999; /* Set a high z-index to ensure it covers other elements */
-          /* position: relative; */
-          transition: background-color 0.3s ease;
-          align-items: center;
-          justify-content: center;
+        overflow: hidden;
+        background-color: transparent;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        padding-bottom: 0;
+        color: white;
+        padding: 20px 20px;
+        height: 100px;
+        /* font-size: 16px; */
+        display: block;
+      }
+
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      .topnav #myLinks {
+        display: none;
+        background-color: rgb(255, 253, 248);
+        width: 150px;
+        height: 150px;
+        z-index: 9999;
+        /* Set a high z-index to ensure it covers other elements */
+        /* position: relative; */
+        transition: background-color 0.3s ease;
+        align-items: center;
+        justify-content: center;
       }
       
       .topnav #myLinks::before {
@@ -647,25 +649,24 @@
       }
       
       .contact-button {
-          text-decoration: none; /* Remove underline from the link */
-          margin-bottom: 10px;
-          font-family: 'Fraunces', sans-serif;
-          color: black;
-          font-size: 10px;
-          font-weight: 100;
-          /* padding: 10px 20px; */
-          /* height: 25px; */
-          /* width: 40px */
-          background-color: rgb(255, 225, 0); 
-          border-radius: 25px; /* Rounded corners */
-          transition: background-color 0.3s ease; /* Smooth transition effect */
-          align-items: center;
-          justify-content: center;
-      
-          /* Style the button for when the mouse hovers over it */
-          &:hover {
-              color: white;
-          }
+        text-decoration: none;
+        /* Remove underline from the link */
+        margin-bottom: 5px;
+        margin-top: 10px;
+        font-family: 'Fraunces', sans-serif;
+        color: black;
+        font-size: 10px;
+        font-weight: 100;
+        background-color: rgb(255, 225, 0);
+        border-radius: 25px;
+        /* Rounded corners */
+        transition: background-color 0.3s ease;
+        /* Smooth transition effect */
+
+        /* Style the button for when the mouse hovers over it */
+        &:hover {
+          color: white;
+        }
       }
       
       .header-title {
